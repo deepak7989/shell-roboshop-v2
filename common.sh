@@ -68,7 +68,7 @@ nodejs_setup(){
     VALIDATE $? "Installing dependencies"
 }
 
-systemd_setuop(){
+systemd_setup(){
     cp $SCRIPT_DIR/$app_name.service /etc/systemd/system/$app_name.service
     VALIDATE $? "Created systemctl service"
 
