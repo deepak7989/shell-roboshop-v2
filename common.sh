@@ -5,6 +5,7 @@ sudo mkdir -p $LOG_FOLDER #inside var/log
 sudo chown -R ec2-user:ec2-user $LOG_FOLDER # Set permission to ec2-user
 sudo chmod -R 755 $LOG_FOLDER
 LOGS_FILE="$LOG_FOLDER/$0.log"
+SCRIPT_DIR=$PWD
 
 USERID=$(id -u)
 R="\e[31m"
